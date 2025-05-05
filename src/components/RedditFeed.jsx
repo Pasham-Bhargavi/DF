@@ -52,7 +52,7 @@ const RedditFeed = () => {
 
   return (
    <>
-  <h1 style={{ color: "white", marginLeft: "35%" }}>Explore Trending ReactJS Topics</h1>
+  <h1 style={{ color: "white", marginLeft: "35%",marginBottom:"5%" }}>Explore Trending ReactJS Topics</h1>
       <div className="container">
         {posts.map((post, index) => (
           <div className="card" key={index} style={{ "--clr": "#03A9F4" }}>

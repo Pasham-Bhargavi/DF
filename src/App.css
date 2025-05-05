@@ -56,13 +56,13 @@ body {
 }
 
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
+  width: 1280px;   /* Fixed width */
+  height: 720px;   /* Fixed height */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Optional: Adjust vertical alignment */
 }
 
 .container .card {
@@ -81,6 +81,11 @@ body {
 
 .container .card:hover {
     height: 400px;
+}
+.content {
+  height: 200px;     /* Fixed height for the content */
+  overflow-y: auto;  /* Enable scrolling if content overflows */
+  padding: 10px;
 }
 
 .container .card .img-box {
